@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallAPI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel hero">
+        <p class="eyebrow">Local AI Workspace</p>
+        <h1>Translate and summarize pasted content with SiliconFlow.</h1>
+        <p class="intro">
+          Paste text, choose the output language, and run a single action from your local
+          machine.
+        </p>
+      </section>
+
+      <section class="panel app-panel">
+        <label class="field-label" for="targetLanguage">Target language</label>
+        <input id="targetLanguage" type="text" value="English" placeholder="English" />
+
+        <label class="field-label" for="sourceText">Content</label>
+        <textarea
+          id="sourceText"
+          placeholder="Paste the content you want to translate or summarize."
+        ></textarea>
+
+        <div class="actions">
+          <button data-mode="translate">Translate</button>
+          <button data-mode="summarize">Summarize</button>
+          <button data-mode="translate-summarize">Translate and Summarize</button>
+        </div>
+
+        <div class="status-row">
+          <p id="status">Ready.</p>
+        </div>
+
+        <label class="field-label" for="result">Result</label>
+        <pre id="result"></pre>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

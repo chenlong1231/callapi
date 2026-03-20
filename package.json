@@ -1,0 +1,9 @@
+{
+  "name": "callapi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local webpage for translation and summarization using SiliconFlow",
+  "scripts": {
+    "start": "node --env-file=.env server.js"
+  }
+}
