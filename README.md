@@ -2,6 +2,8 @@
 
 Local webpage for translation and summarization using SiliconFlow.
 
+Default usage: English input, Chinese output.
+
 ## Features
 
 - Paste text into a webpage running on your local PC

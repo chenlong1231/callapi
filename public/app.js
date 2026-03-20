@@ -12,7 +12,7 @@ function setLoading(isLoading) {
 
 async function runAction(mode) {
   const text = sourceTextInput.value.trim();
-  const targetLanguage = targetLanguageInput.value.trim() || "English";
+  const targetLanguage = targetLanguageInput.value.trim() || "Chinese";
 
   if (!text) {
     statusElement.textContent = "Paste some content first.";

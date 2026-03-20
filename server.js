@@ -35,7 +35,7 @@ function serveFile(res, filePath) {
 }
 
 function buildPrompt(mode, text, targetLanguage) {
-  const safeTargetLanguage = targetLanguage?.trim() || "English";
+  const safeTargetLanguage = targetLanguage?.trim() || "Chinese";
 
   switch (mode) {
     case "translate":
